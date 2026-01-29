@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #251d20;
+
+  background-color: #f6e0a4;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.logo {
+  height: auto;
+  width: 260px;
+  position: fixed;
+  left: 1rem;
+  top: 1.2rem;
+  pointer-events: none;
+}
+
+.active {
+  font-weight: 700;
+}
+
+.fc {
+  position: fixed;
+  bottom: 1.2rem;
+  left: 1.3rem;
+  width: 20rem;
+  pointer-events: none;
+}
+
+.fc p {
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.fc span {
+  font-size: 0.75rem;
+  display: inline-block;
+  margin-bottom: 0.7rem;
+}
+
+.fc a {
+  color: #251d20;
+  transition: all 250ms ease-in-out;
+}
+
+.fc a:hover {
+  text-decoration: none;
+}
+
+.fc > a {
+  font-weight: 700;
+}
+
+nav {
+  position: fixed;
+  right: 1rem;
+  top: 0;
+  height: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  padding: 1.2rem 0;
+  pointer-events: none;
+}
+
+.contact {
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #251d20;
+  transition: all 250ms ease-in;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.sec {
+  display: none;
+}
+
+a {
+  pointer-events: auto;
+}

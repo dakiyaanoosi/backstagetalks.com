@@ -1,0 +1,58 @@
+.scroll_container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scroll_container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll_container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-snap-stop: always;
+  scroll-behavior: smooth;
+}
+
+.card img {
+  max-width: 420px;
+  height: auto;
+}
+
+.issue {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.card p {
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.card .link {
+  font-size: 0.9rem;
+}
+
+.change-fg {
+  text-decoration: none;
+  transition: all 250ms ease-in-out;
+}
+
+.change-fg:hover,
+.change-fg:focus,
+.change-fg:active {
+  text-decoration: underline;
+}
